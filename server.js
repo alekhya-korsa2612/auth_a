@@ -11,8 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api', authRouter);
 const uri = 'mongodb+srv://korsaalekhya516:6bA91pJwoK0rGY6w@cluster0.wq9diur.mongodb.net/';
 mongoose.connect(uri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
+  
 }).then(() => {
   console.log('Connected to MongoDB Atlas with Mongoose');
 }).catch((error) => {
